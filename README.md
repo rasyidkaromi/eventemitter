@@ -20,29 +20,29 @@ Usage
 
           	Event := eventemitter.New(1)
         	Event1 := Event.On("event1")
-        	Event2 := Event.On("event1")
+        	Event2 := Event.On("event2")
           
         	Event.Emit("`{
 			"data": "data",
 			"data 2": "data 2"
-		}`", "Event1")
+		}`", "event1")
               
-        	Event.Emit("test 2", "Event2")
+        	Event.Emit("test 2", "event2")
           
         	fmt.Println(<-Event1)
         	fmt.Println(<-Event2)
 
 
            // Menambahkan event dalam channel yang sama "event baru" ke event1.          
-        	Event.EventPlus(Event1, "event baru")
+        	Event.EventPlus(Event1, "eventbaru")
 
-            // Publish new content in Event2
-        	Event.Emit("test 3", "Event2")
+            // Emit data baru di event2
+        	Event.Emit("test 3", "event2")
 
         	fmt.Println(<-Event2)
         	
-            // membuang event Event2 di dalam channel event Event1
-        	Event.EventMin(Event1, "Event2")
+            // membuang "eventbaru" di dalam channel event Event1
+        	Event.EventMin(Event1, "eventbaru")
           
 	}
 
