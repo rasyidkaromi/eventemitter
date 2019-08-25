@@ -23,9 +23,9 @@ Usage
         	Event2 := Event.On("event1")
           
         	Event.Emit("`{
-			          "data": "data",
-			          "data 2": "data 2"
-			        }`", "Event1")
+			"data": "data",
+			"data 2": "data 2"
+		}`", "Event1")
               
         	Event.Emit("test 2", "Event2")
           
