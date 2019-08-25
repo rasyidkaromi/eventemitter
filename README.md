@@ -33,10 +33,10 @@ Usage
         	fmt.Println(<-Event2)
 
 
-           // Menambahkan event dalam channel yang sama "event baru" ke event1.          
+           // Menambahkan event dalam channel yang sama | "eventbaru" ke channel Event1.          
         	Event.EventPlus(Event1, "eventbaru")
 
-            // Emit data baru di event2
+            // Emit data baru di event "event2"
         	Event.Emit("test 3", "event2")
 
         	fmt.Println(<-Event2)
@@ -54,6 +54,8 @@ Usage
 	 5000	    793015 ns/op	    3289 B/op	       4 allocs/op
 
 
+	*) kelebihannay yaitu kita bisa membuat dan menerima banyak event dalam satu channel dan memilahnya
+	
 
 
 
