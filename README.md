@@ -18,7 +18,7 @@ Usage
 
 	func main() {
 
-          Event := eventemitter.New(1)
+          	Event := eventemitter.New(1)
         	Event1 := Event.On("event1")
         	Event2 := Event.On("event1")
           
