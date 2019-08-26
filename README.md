@@ -54,7 +54,7 @@ Usage
 	 5000	    793015 ns/op	    3289 B/op	       4 allocs/op
 
 
-	*) kelebihannay yaitu kita bisa membuat dan menerima banyak event dalam satu channel dan memilahnya
+	*) kelebihannya yaitu kita bisa membuat dan menerima banyak event dalam satu channel dan memilahnya
 	
 
 
