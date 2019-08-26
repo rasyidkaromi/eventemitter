@@ -16,7 +16,7 @@ func BenchmarkObject(b *testing.B) {
 			}`, "ch1")
 
 		if val, ok := <-c1; !ok {
-			log.Println(" Error found on subscribed.")
+			log.Println(" Error found on event ch1.")
 		} else {
 			pnt++
 			log.Println(ok)
