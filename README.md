@@ -1,4 +1,4 @@
-# eventemitter
+# EventEmitter
 Go EventEmitter
 
 
