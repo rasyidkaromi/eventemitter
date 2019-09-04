@@ -9,7 +9,7 @@ go get github.com/rasyidkaromi/eventemitter
         
 Usage
 ---------------
-
+```go
 	package main
 
 	import "fmt"
@@ -45,7 +45,7 @@ Usage
         	Event.EventMin(Event1, "eventbaru")
           
 	}
-
+```
 
 	dual core intel p6300 
 	goos: windows
